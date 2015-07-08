@@ -185,13 +185,13 @@
         IPv6SixHex = '(' + h16 + ':){6}' + ls32,
         IPv6FiveHex = '::(' + h16 + ':){5}' + ls32,
         IPv6FourHex = h16 + '::(' + h16 + ':){4}' + ls32,
-        IPv6ThreeeHex = '(' + h16 + ':){0,1}' + h16 + '::(' + h16 + ':){3}' + ls32,
+        IPv6ThreeHex = '(' + h16 + ':){0,1}' + h16 + '::(' + h16 + ':){3}' + ls32,
         IPv6TwoHex = '(' + h16 + ':){0,2}' + h16 + '::(' + h16 + ':){2}' + ls32,
         IPv6OneHex = '(' + h16 + ':){0,3}' + h16 + '::' + h16 + ':' + ls32,
         IPv6NoneHex = '(' + h16 + ':){0,4}' + h16 + '::' + ls32,
         IPv6NoneHex2 = '(' + h16 + ':){0,5}' + h16 + '::' + h16,
         IPv6NoneHex3 = '(' + h16 + ':){0,6}' + h16 + '::',
-        IPv6address = '((' + IPv6SixHex + or + IPv6FiveHex + or + IPv6FourHex + or + IPv6ThreeeHex + or + IPv6TwoHex + or + IPv6OneHex + or + IPv6NoneHex + or + IPv6NoneHex2 + or + IPv6NoneHex3 + ')(\\/(' + cidr + '))?)';
+        IPv6address = '((' + IPv6SixHex + or + IPv6FiveHex + or + IPv6FourHex + or + IPv6ThreeHex + or + IPv6TwoHex + or + IPv6OneHex + or + IPv6NoneHex + or + IPv6NoneHex2 + or + IPv6NoneHex3 + ')(\\/(' + cidr + '))?)';
 
     /**
      * IP Future Versions (http://tools.ietf.org/html/rfc3986#page-19)
